@@ -15,7 +15,17 @@ make -f makefile.unix
 mv /opt/denarius/src/denariusd /usr/local/bin/denariusd
 sudo denariusd --daemon
 
-
+## Masternode Status Codes
+```MASTERNODE_NOT_PROCESSED: 0 
+MASTERNODE_IS_CAPABLE: 1 
+MASTERNODE_NOT_CAPABLE: 2 
+MASTERNODE_STOPPED: 3
+MASTERNODE_INPUT_TOO_NEW: 4
+MASTERNODE_PORT_NOT_OPEN: 6
+MASTERNODE_PORT_OPEN: 7
+MASTERNODE_SYNC_IN_PROCESS: 8
+MASTERNODE_REMOTELY_ENABLED: 9
+```
 ```
 Compile Version
 ```
