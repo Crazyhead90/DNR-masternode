@@ -28,7 +28,7 @@ MASTERNODE_PORT_OPEN: 7
 MASTERNODE_SYNC_IN_PROCESS: 8
 MASTERNODE_REMOTELY_ENABLED: 9
 ```
-```
+
 Compile Version
 ```
 bash -c "$(wget -O - https://raw.githubusercontent.com/buzzkillb/DNR-masternode/master/compile.sh)"
