@@ -43,12 +43,13 @@ apt-get --assume-yes install git unzip build-essential libssl-dev libdb++-dev li
 #rm denariusd-2.5.0.0_ubuntu16.tar.gz
 
 echo "Download and Compile Denarius Wallet"
+cd /opt/
 git clone https://github.com/carsenk/denarius
 cd denarius
 git checkout master
 cd src
 make -f makefile.unix
-mv /root/denarius/src/denariusd /usr/local/bin/denariusd
+mv /opt/denarius/src/denariusd /usr/local/bin/denariusd
 
 echo "Populate denarius.conf"
 sudo mkdir  /root/.denarius
