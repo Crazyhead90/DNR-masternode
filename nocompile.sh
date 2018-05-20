@@ -4,7 +4,7 @@ echo "Updating linux packages"
 sudo apt-get update && apt-get upgrade -y
 
 echo "Intalling screen"
-apt install screen
+apt install screen -y
 
 echo "Installing git"
 apt install git -y
