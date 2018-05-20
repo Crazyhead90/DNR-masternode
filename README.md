@@ -1,3 +1,4 @@
+# ![Denarius](https://denarius.io/wp-content/uploads/2017/11/denarius-256.png)
 # DNR-masternode
 
 ## Denarius Masternode Installer
