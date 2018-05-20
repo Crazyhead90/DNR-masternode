@@ -4,7 +4,19 @@
 ```
 bash -c "$(wget -O - https://raw.githubusercontent.com/buzzkillb/DNR-masternode/master/denarius.sh)"
 ```
+Sample to manually update to latest branch and compile
+```
+denariusd stop
+cd /opt/denarius
+git checkout master
+git pull
+cd src
+make -f makefile.unix
+mv /opt/denarius/src/denariusd /usr/local/bin/denariusd
+sudo denariusd --daemon
 
+
+```
 Compile Version
 ```
 bash -c "$(wget -O - https://raw.githubusercontent.com/buzzkillb/DNR-masternode/master/compile.sh)"
