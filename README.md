@@ -1,4 +1,10 @@
 # DNR-masternode
+
+## Denarius Masternode Installer
+```
+bash -c "$(wget -O - https://raw.githubusercontent.com/buzzkillb/DNR-masternode/master/denarius.sh)"
+```
+
 Compile Version
 ```
 bash -c "$(wget -O - https://raw.githubusercontent.com/buzzkillb/DNR-masternode/master/compile.sh)"
