@@ -14,6 +14,7 @@ cd src
 make -f makefile.unix
 mv /opt/denarius/src/denariusd /usr/local/bin/denariusd
 sudo denariusd --daemon
+```
 
 ## Masternode Status Codes
 ```MASTERNODE_NOT_PROCESSED: 0 
