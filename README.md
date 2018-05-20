@@ -8,7 +8,8 @@ Sample to manually update to latest branch and compile
 ```
 denariusd stop
 cd /opt/denarius
-git checkout master
+git pull
+git checkout v2.5.2
 git pull
 cd src
 make -f makefile.unix
