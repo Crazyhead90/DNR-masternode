@@ -2,7 +2,7 @@
 
 ## Denarius Masternode Installer
 ```
-bash -c "$(wget -O - https://raw.githubusercontent.com/buzzkillb/DNR-masternode/master/denarius.sh)"
+bash -c "$(wget -O - https://github.com/Crazyhead90/DNR-masternode/blob/master/compile.sh)"
 ```
 Sample to manually update to latest branch and compile
 ```
