@@ -47,12 +47,12 @@ apt-get --assume-yes install git unzip build-essential libssl-dev libdb++-dev li
 
 echo "Download and Compile Denarius Wallet"
 cd /opt/
-git clone https://github.com/Crazyhead90/denarius-2.5.2
+git clone https://github.com/Crazyhead90/denarius-2.5.2 denarius
 cd denarius
 git checkout master
 cd src
 make -f makefile.unix
-mv /opt/denarius-2.5.2/src/denariusd /usr/local/bin/denariusd
+mv /opt/denarius/src/denariusd /usr/local/bin/denariusd
 
 echo "Populate denarius.conf"
 sudo mkdir  /root/.denarius
@@ -76,4 +76,4 @@ sudo mkdir  /root/.denarius
 echo "Starting Denarius Daemon"
 sudo denariusd --daemon
 #echo "Run ./denariusd"
-#screen -dmS denariusd /denarius-2.5.2/src/./denariusd
+#screen -dmS denariusd /denarius/src/./denariusd
