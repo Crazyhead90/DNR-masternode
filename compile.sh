@@ -47,12 +47,12 @@ apt-get --assume-yes install git unzip build-essential libssl-dev libdb++-dev li
 
 echo "Download and Compile Denarius Wallet"
 cd /opt/
-git clone https://github.com/carsenk/denarius
+git clone https://github.com/Crazyhead90/denarius-2.5.2
 cd denarius
 git checkout master
 cd src
 make -f makefile.unix
-mv /opt/denarius/src/denariusd /usr/local/bin/denariusd
+mv /opt/denarius-2.5.2/src/denariusd /usr/local/bin/denariusd
 
 echo "Populate denarius.conf"
 sudo mkdir  /root/.denarius
@@ -67,13 +67,13 @@ sudo mkdir  /root/.denarius
     echo -e "rpcuser=$rpcuser\nrpcpassword=$rpcpassword\nserver=1\nlisten=1\nmaxconnections=100\ndaemon=1\nport=9999\nstaking=0\nrpcallowip=127.0.0.1\nexternalip=$VPSIP:9999\nmasternode=1\nmasternodeprivkey=$MASTERNODEPRIVKEY" > /root/.denarius/denarius.conf
 
 
-echo "Get Chaindata"
-cd ~/.denarius
-rm -rf database txleveldb smsgDB
-wget https://gitlab.com/denarius/chaindata/raw/master/chaindata.zip
-unzip chaindata.zip
+#echo "Get Chaindata"
+#cd ~/.denarius
+#rm -rf database txleveldb smsgDB
+#wget https://gitlab.com/denarius/chaindata/raw/master/chaindata.zip
+#unzip chaindata.zip
 
 echo "Starting Denarius Daemon"
 sudo denariusd --daemon
 #echo "Run ./denariusd"
-#screen -dmS denariusd /denarius/src/./denariusd
+#screen -dmS denariusd /denarius-2.5.2/src/./denariusd
